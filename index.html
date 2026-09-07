@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KAVI | Art • Creation • Expression</title>
+<meta name="description" content="KAVI — a luxury personal art portfolio showcasing original drawings, portraits and creative work.">
+<style>
+:root{--bg:#080808;--panel:#101010;--gold:#d9a441;--gold2:#f3cc72;--cream:#eee5d4;--muted:#aaa49a;--line:#292929}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.05;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:4px 4px}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;z-index:50;top:0;left:0;right:0;height:78px;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;background:rgba(8,8,8,.86);backdrop-filter:blur(15px);border-bottom:1px solid #252525}
+.logo{height:53px;width:115px;object-fit:contain}.links{display:flex;gap:30px}.links a{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#d5d0c8;transition:.25s}.links a:hover{color:var(--gold2)}
+.hero{min-height:100vh;padding:145px 6% 80px;display:grid;align-items:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:600px;height:600px;border-radius:50%;right:-250px;top:100px;background:radial-gradient(circle,rgba(217,164,65,.12),transparent 65%)}
+.heroGrid{max-width:1180px;width:100%;margin:auto;display:grid;grid-template-columns:1fr .85fr;gap:80px;align-items:center;position:relative;z-index:1}
+.eyebrow{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+h1{font:400 clamp(80px,13vw,170px)/.78 Georgia,serif;letter-spacing:-.07em;margin:25px 0 35px;background:linear-gradient(110deg,#b77b1c,#ffe19a,#b97a16);-webkit-background-clip:text;color:transparent}
+.heroText{font:20px/1.6 Georgia,serif;color:#c8c1b5;max-width:550px}.actions{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 21px;border:1px solid #75602e;color:#f1d58e;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.btn.gold{background:linear-gradient(100deg,#a86d11,#edc261);color:#080808;border:0}
+.heroArt{position:relative}.heroArt img{width:100%;height:650px;object-fit:cover;border:1px solid #383838;box-shadow:0 20px 70px #000}
+.badge{position:absolute;bottom:-18px;left:-28px;background:#0c0c0c;border:1px solid #5b4822;padding:17px 22px;font:italic 16px Georgia;color:#e8c66f}
+section{max-width:1200px;margin:auto;padding:110px 6%}.sectionHead{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:38px}.sectionHead h2{font:400 52px Georgia;margin:0}.sectionHead span{font-size:10px;letter-spacing:.18em;color:#77736c;text-transform:uppercase}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.work{margin:0;overflow:hidden;background:#111;border:1px solid #242424;position:relative}.work img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s,filter .6s}.work:hover img{transform:scale(1.04);filter:brightness(1.08)}.work.one{grid-column:span 7;height:620px}.work.two,.work.three{grid-column:span 5;height:300px}.work.four,.work.five,.work.six{grid-column:span 4;height:370px}.caption{position:absolute;left:14px;bottom:14px;padding:8px 11px;background:#090909e8;border:1px solid #5d4924;color:#ead084;font:13px Georgia}
+.about{display:grid;grid-template-columns:.75fr 1.25fr;gap:90px}.about h2{font:400 62px/.95 Georgia;margin:0;color:#e7c56d}.about p{font:18px/1.8 Georgia;color:#bbb5aa}.quote{border-left:2px solid var(--gold);padding-left:22px;font-style:italic!important;color:#e1d4ba!important}
+.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.service{padding:30px 25px 25px 0;border-bottom:1px solid var(--line)}.service b{font-size:10px;color:var(--gold);letter-spacing:.15em}.service h3{font:400 30px Georgia;margin:12px 0}.service p{color:#89847c;line-height:1.7}
+.contact{max-width:none;background:linear-gradient(135deg,#0b0b0b,#14110a);text-align:center;border-top:1px solid #2d2618;border-bottom:1px solid #2d2618}.contact h2{font:400 clamp(48px,8vw,100px)/.95 Georgia;margin:22px auto;max-width:900px;color:#e8c76d}.contact p{color:#a7a198}.contact .actions{justify-content:center}
+footer{padding:28px 6%;display:flex;justify-content:space-between;color:#666158;font-size:9px;letter-spacing:.15em;text-transform:uppercase}
+@media(max-width:800px){nav{height:68px}.logo{height:45px;width:95px}.links{display:none}.hero{padding-top:110px}.heroGrid,.about{grid-template-columns:1fr;gap:45px}.heroArt img{height:520px}.badge{left:10px}.gallery{grid-template-columns:1fr 1fr}.work.one,.work.two,.work.three,.work.four,.work.five,.work.six{grid-column:span 1;height:330px}.work.one{grid-column:span 2;height:470px}.services{grid-template-columns:1fr}section{padding:78px 6%}.sectionHead h2{font-size:39px}}
+</style>
+</head>
+<body>
+<nav><a href="https://wa.me/916369300136"><img class="logo" src="assets/logo.png" alt="KAVI logo"></a><div class="links"><a href="#work">Portfolio</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div class="heroGrid">
+<div>
+<div class="eyebrow">Artist • Creator • Trainer</div>
+<h1>KAVI</h1>
+<p class="heroText">A personal art space where graphite, colour and imagination come together. Explore original artwork, creative studies and commissioned pieces.</p>
+<div class="actions"><a class="btn gold" href="#work">Explore Portfolio</a><a class="btn" href="#contact">Commission Artwork</a></div>
+</div>
+<div class="heroArt"><img src="assets/art1.jpg" alt="Kavi pencil portrait artwork"><div class="badge">Art • Patience • Expression</div></div>
+</div>
+</header>
+
+<section id="work">
+<div class="sectionHead"><h2>Selected Work</h2><span>01 / Portfolio</span></div>
+<div class="gallery">
+<figure class="work one"><img src="assets/art1.jpg"><figcaption class="caption">Pencil Portrait</figcaption></figure>
+<figure class="work two"><img src="assets/art2.jpg"><figcaption class="caption">Colour Study</figcaption></figure>
+<figure class="work three"><img src="assets/art3.jpg"><figcaption class="caption">Glass Illustration</figcaption></figure>
+<figure class="work four"><img src="assets/art4.jpg"><figcaption class="caption">Blue & Gold</figcaption></figure>
+<figure class="work five"><img src="assets/art5.jpg"><figcaption class="caption">Devotional Art</figcaption></figure>
+<figure class="work six"><img src="assets/art6.jpg"><figcaption class="caption">Hand Study</figcaption></figure>
+<figure class="work four"><img src="assets/art7.jpg"><figcaption class="caption">Graphite Portrait</figcaption></figure>
+<figure class="work five"><img src="assets/art8.jpg"><figcaption class="caption">Eye Study</figcaption></figure>
+</div>
+</section>
+
+<section id="about"><div class="about"><h2>The Artist<br>Behind KAVI</h2><div><p class="quote">“Every drawing begins with a blank page — the rest is patience, observation and imagination.”</p><p>KAVI is a creative portfolio built around a passion for drawing and visual expression. The collection includes detailed graphite studies, portrait work, coloured illustrations and devotional art.</p><p>The portfolio is designed to grow with new collections, commissioned artwork, workshops and creative projects.</p></div></div></section>
+
+<section id="services">
+<div class="sectionHead"><h2>What I Create</h2><span>02 / Services</span></div>
+<div class="services">
+<div class="service"><b>01</b><h3>Portraits</h3><p>Detailed hand-drawn graphite and colour portraits made for meaningful personal keepsakes.</p></div>
+<div class="service"><b>02</b><h3>Custom Artwork</h3><p>Original pieces developed from your reference, concept, occasion or creative brief.</p></div>
+<div class="service"><b>03</b><h3>Creative Training</h3><p>Practical demonstrations and guidance for learners developing their drawing skills.</p></div>
+</div></section>
+
+<section class="contact" id="contact">
+<div class="eyebrow">03 / Contact</div><h2>Bring your idea<br>to life.</h2>
+<p>Connect with KAVI for artwork, commissions and creative collaborations.</p>
+<div class="actions"><a class="btn gold" href="mailto:kavikutty566@gmail.com">Email Kavi</a><a class="btn" href="#" onclick="return false;">Instagram</a><a class="btn" href="https://wa.me/916369300136">WhatsApp</a></div>
+</section>
+<footer><span>© 2026 KAVI</span><span>Artist • Creator • Trainer</span></footer>
+<script>
+document.querySelectorAll('img').forEach(img=>{
+  img.addEventListener('error',()=>{
+    img.style.display='none';
+    const box=img.closest('.work,.heroArt,.logo') || img.parentElement;
+    if(box && !box.querySelector('.img-error')){
+      const m=document.createElement('div'); m.className='img-error';
+      m.textContent='Artwork image unavailable';
+      m.style.cssText='padding:30px;color:#8d877d;text-align:center;font:14px Georgia;';
+      box.appendChild(m);
+    }
+  });
+});
+</script>
+</body></html>
